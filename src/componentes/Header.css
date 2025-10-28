@@ -1,0 +1,308 @@
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 10px 0;
+  margin: 0; 
+  height: 115px;
+}
+
+/* LINKS DEL HEADER */
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: gold;
+}
+
+.contenido-principal {
+  margin-top: 0; 
+  padding-top: 0;
+}
+
+.header nav a {
+  color: white;         
+  text-decoration: none;  
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease; 
+}
+
+.header nav a:hover {
+  color: #FFD700; 
+}
+
+.header-logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header-nav button:hover {
+  color: gold;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icon-button:hover {
+  color: gold;
+  transform: scale(1.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: gold;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+  z-index: 1001;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  z-index: 1001;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.carrito-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: gold; 
+  color: black; 
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  border: 1px solid #000; 
+}
+
+/* Hamburguesa oculta por defecto */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Animación de la hamburguesa cuando está abierta */
+.hamburger-line.open:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Overlay del menú */
+.menu-overlay {
+  display: none;
+}
+
+/* ======================================
+   RESPONSIVE MOBILE
+   ====================================== */
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 1rem 1.5rem;
+    height: auto;
+  }
+
+  header {
+    height: auto;
+  }
+
+  /* Mostrar hamburguesa */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Ocultar iconos de favoritos en mobile para dar espacio */
+  .icons .icon:not(.carrito-icon) {
+    display: none;
+  }
+
+  /* Nav oculto por defecto */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transition: right 0.4s ease;
+    border-left: 2px solid gold;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  /* Nav abierto */
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-item {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .nav-item:hover {
+    color: gold;
+    transform: scale(1.05);
+  }
+
+  /* Overlay oscuro */
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Logo más pequeño */
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Iconos más pequeños */
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .icons {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    width: 80%;
+  }
+
+  .nav-item {
+    font-size: 1.3rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}

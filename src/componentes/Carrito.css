@@ -1,0 +1,137 @@
+.carrito-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.carrito-modal {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  width: 450px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px gold;
+  position: relative;
+  color: white;
+}
+
+.carrito-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: gold;
+  cursor: pointer;
+}
+
+.carrito-titulo {
+  margin-bottom: 15px;
+  font-size: 22px;
+  border-bottom: 1px solid gold;
+  padding-bottom: 10px;
+}
+
+.carrito-vacio {
+  text-align: center;
+  color: #aaa;
+}
+
+.carrito-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #2c2c2c;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.carrito-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 15px;
+  background: white;
+  border-radius: 6px;
+}
+
+.carrito-detalles {
+  flex: 1;
+}
+
+.subtotal {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.btn-quitar {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-quitar:hover {
+  background: darkred;
+}
+
+.carrito-total {
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: gold;
+}
+
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-vaciar {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-vaciar:hover {
+  background: #666;
+}
+
+.btn-finalizar {
+  background: gold;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-finalizar:hover {
+  background: #e0b800;
+}
