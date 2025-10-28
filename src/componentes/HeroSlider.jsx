@@ -11,15 +11,15 @@ export default function HeroSlider() {
   const slides = [
     {
       id: 1,
-      img: '/public/flyermessi.png',
+      img: '/images/flyermessi.png',
     },
     {
       id: 2,
-      img: '/public/flyermbappe.jpg',
+      img: '/images/flyermbappe.jpg',
     },
     {
       id: 3,
-      img: '/public/flyerney.jpg',
+      img: '/images/flyerney.jpg',
     },
   ];
 

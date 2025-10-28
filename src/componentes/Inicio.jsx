@@ -19,7 +19,7 @@ export default function Inicio() {
           aria-label="Video hero mostrando acción de fútbol"
         >
           <source
-            src="/public/assets/videos/Untitled video - Made with Clipchamp.mp4"
+            src="/videos/Untitled video - Made with Clipchamp.mp4"
             type="video/mp4"
           />
         </video>
@@ -47,17 +47,17 @@ export default function Inicio() {
         <h2>TIPO DE PISADA</h2>
         <div className="tipo-pisada-grid">
           <Link to="/futbol11" className="tipo-pisada-card">
-            <img src="/public/pisadaf11.webp" alt="Fútbol 11" />
+            <img src="/images/pisadaf11.webp" alt="Fútbol 11" />
             <h3>FÚTBOL 11</h3>
           </Link>
 
           <Link to="/futbol5" className="tipo-pisada-card">
-            <img src="/public/pisadaf5.webp" alt="Fútbol 5" />
+            <img src="/images/pisadaf5.webp" alt="Fútbol 5" />
             <h3>FÚTBOL 5</h3>
           </Link>
 
           <Link to="/futsal" className="tipo-pisada-card">
-            <img src="/public/pisadafutsal.webp" alt="Futsal" />
+            <img src="/images/pisadafutsal.webp" alt="Futsal" />
             <h3>FUTSAL</h3>
           </Link>
         </div>
@@ -66,7 +66,7 @@ export default function Inicio() {
       {/* SECCIÓN CON VIDEO INTERMEDIO */}
       <section className="video-fondo">
         <video className="video-bg-hero" autoPlay muted loop playsInline>
-          <source src="/public/assets/videos/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4" />
+          <source src="/videos/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4" />
           Tu navegador no soporta video.
         </video>
 
@@ -81,13 +81,13 @@ export default function Inicio() {
         <h2 className="titulo-coleccion">ADIDAS F50</h2>
         <div className="grid-f50">
           <div className="card-f50">
-            <img src="/public/f502.PNG" alt="F50 Botín 1" />
+            <img src="/images/f502.PNG" alt="F50 Botín 1" />
           </div>
           <div className="card-f50">
-            <img src="/public/f501.JPG" alt="F50 Botín 2" />
+            <img src="/images/f501.JPG" alt="F50 Botín 2" />
           </div>
           <div className="card-f50">
-            <img src="/public/f503.PNG" alt="F50 Botín 3" />
+            <img src="/images/f503.PNG" alt="F50 Botín 3" />
           </div>
         </div>
       </section>
@@ -97,13 +97,13 @@ export default function Inicio() {
         <h2 className="titulo-coleccion">NIKE SUPERLFY</h2>
         <div className="grid-f50">
           <div className="card-f50">
-            <img src="/public/mercurialdorado.jpg" alt="Nike Botín 1" />
+            <img src="/images/mercurialdorado.jpg" alt="Nike Botín 1" />
           </div>
           <div className="card-f50">
-            <img src="/public/tiempodroado.jpg" alt="Nike Botín 2" />
+            <img src="/images/tiempodroado.jpg" alt="Nike Botín 2" />
           </div>
           <div className="card-f50">
-            <img src="/public/phantomdorado.jpg" alt="Nike Botín 3" />
+            <img src="/images/phantomdorado.jpg" alt="Nike Botín 3" />
           </div>
         </div>
       </section>
@@ -113,13 +113,13 @@ export default function Inicio() {
         <h2 className="titulo-coleccion">PUMA FUTURE 5</h2>
         <div className="grid-f50">
           <div className="card-f50">
-            <img src="/public/PUMADEFINI1.png" alt="Puma Botín 1" />
+            <img src="/images/PUMADEFINI1.png" alt="Puma Botín 1" />
           </div>
           <div className="card-f50">
-            <img src="/public/PUMADEFINI2.png" alt="Puma Botín 2" />
+            <img src="/images/PUMADEFINI2.png" alt="Puma Botín 2" />
           </div>
           <div className="card-f50">
-            <img src="/public/PUMADEFINI3.png" alt="Puma Botín 3" />
+            <img src="/images/PUMADEFINI3.png" alt="Puma Botín 3" />
           </div>
         </div>
       </section>
