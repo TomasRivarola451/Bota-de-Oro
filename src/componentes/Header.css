@@ -207,12 +207,10 @@ header nav ul li a:hover {
     height: auto;
   }
 
-  /* Mostrar hamburguesa */
   .hamburger {
     display: flex;
   }
 
-  /* Ocultar iconos de favoritos en mobile para dar espacio */
   .icons .icon:not(.carrito-icon) {
     display: none;
   }
