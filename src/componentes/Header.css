@@ -201,16 +201,26 @@ header nav ul li a:hover {
   .main-header {
     padding: 1rem 1.5rem;
     height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   header {
     height: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
+  /* Mostrar hamburguesa */
   .hamburger {
     display: flex;
   }
 
+  /* Ocultar iconos de favoritos en mobile */
   .icons .icon:not(.carrito-icon) {
     display: none;
   }

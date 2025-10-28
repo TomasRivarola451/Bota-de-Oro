@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +41,80 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.barra-superior {
+  background-color: #f5f5f5;
+  padding: 8px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  width: 100%;
+}
+
+.barra-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 12px;
+}
+
+.barra-links a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.barra-links a:hover {
+  color: #757575;
+}
+
+
+.main-header {
+  margin-top: 40px; 
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido-principal {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* ======================================
+   RESPONSIVE MOBILE
+   ====================================== */
+
+@media (max-width: 768px) {
+
+  .barra-superior {
+    display: none;
+  }
+
+
+  .main-header {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .contenido-principal {
+    padding-top: 70px; 
+  }
+
+
+  #root {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-principal {
+    padding-top: 65px;
+  }
 }
