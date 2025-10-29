@@ -454,3 +454,41 @@ body {
 .contenido-principal {
   padding-top: 72px;
 }
+/* RESET GENERAL PARA EVITAR CONFLICTOS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* FORZAR OCULTAR BARRA EN MOBILE */
+@media (max-width: 768px) {
+  .barra-superior,
+  .barra-links {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Asegurar que el body empiece desde arriba */
+  body {
+    padding-top: 0 !important;
+  }
+  
+  /* Asegurar que el header esté pegado arriba */
+  header,
+  .main-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-top: 0 !important;
+  }
+}

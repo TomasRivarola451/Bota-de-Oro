@@ -1,3 +1,4 @@
+/* ESTILOS ORIGINALES DE APP */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -43,15 +44,13 @@
   color: #888;
 }
 
+/* ======================================
+   BARRA SUPERIOR ESTILO NIKE
+   ====================================== */
 .barra-superior {
   background-color: #f5f5f5;
   padding: 8px 20px;
   border-bottom: 1px solid #e5e5e5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1001;
   width: 100%;
 }
 
@@ -72,9 +71,9 @@
   color: #757575;
 }
 
-
+/* AJUSTAR HEADER PARA QUE NO QUEDE DEBAJO DE LA BARRA */
 .main-header {
-  margin-top: 40px; 
+  margin-top: 40px; /* Altura de la barra superior */
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -88,12 +87,12 @@
    ====================================== */
 
 @media (max-width: 768px) {
-
+  /* Ocultar barra superior en mobile */
   .barra-superior {
     display: none;
   }
 
-
+  /* Quitar margen del header en mobile y hacerlo fixed */
   .main-header {
     margin-top: 0;
     position: fixed;
@@ -103,11 +102,12 @@
     z-index: 1000;
   }
 
+  /* Padding al contenido para que no quede debajo del header */
   .contenido-principal {
-    padding-top: 70px; 
+    padding-top: 70px; /* Altura del header mobile */
   }
 
-
+  /* Ajustar padding del root en mobile */
   #root {
     padding: 0;
   }
